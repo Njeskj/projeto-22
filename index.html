@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript - Academy Europe</title>
+</head>
+<body>
+    <script>
+        alert("Olá mundo!!!");
+        
+        alert("Suas informações aqui!!!");
+
+        document.write("<h1>Olá mundo!</h1>");
+    </script>
+
+    <script>
+        x = 3;
+        X = 7;
+        resultado = x + X;
+        document.write(resultado);
+    </script>
+
+    <button onclick="return confirmIt()">Excluir</button>
+    <script>
+        function confirmIt(){
+            var x = confirm("Tem Certeza?");
+            if(x == true){
+                alert('Dados excluídos com sucesso.');
+            }else{
+                alert('Dados não excluídos.');
+            }
+        }
+    </script>
+
+    <button onclick="return yourName()">Nome</button>
+    <script>
+        function yourName(){
+            var x = prompt("Por favor, digite seu nome.","Israel");
+            alert (x);
+        }
+    </script>
+
+</body>
+</html>
